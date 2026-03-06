@@ -3434,7 +3434,7 @@ const rn = M.forwardRef((e, t) => {
           (i.frustumCulled = !1),
           this.scene === null && (this.scene = new ss()),
           this.scene.add(i),
-          Math.random() < 0.15 && createImage(),
+		  Math.random() < 0.15 && createImage(this.scene),
           (this.screen = i));
     }
     getFullscreenMaterial() {
